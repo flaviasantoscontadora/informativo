@@ -245,9 +245,9 @@ td.cod{font-family:var(--texto);font-weight:700;font-size:18px;color:var(--brand
         <svg viewBox="0 0 24 24" aria-hidden="true"><path class="ic" d="M4 20l1.3-3.7A8 8 0 1 1 8 19.2z"/><path class="ic" d="M9.3 8.6c-.4 2.9 2.6 6 5.9 5.8l.8-1.5-2-1-.9.9c-1-.5-1.9-1.4-2.3-2.4l.9-.9-1-2z"/></svg>
         <span><small>WhatsApp</small><b>(51) 99460-8001</b></span>
       </a>
-      <a class="canal" href="https://linktr.ee/flaviasantoscontabilidade" target="_blank" rel="noopener">
+      <a class="canal" href="#conheca">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path class="ic" d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path class="ic" d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
-        <span><small>Todos os canais</small><b>linktr.ee/flaviasantoscontabilidade</b></span>
+        <span><small>Serviços e canais</small><b>Conheça o escritório</b></span>
       </a>
     </div>
   </div>
@@ -544,7 +544,7 @@ function materia(e){
   </article>
   <aside class="lateral" aria-label="Resumo e outras edições">
     <div><h4>Em números</h4>${numeros(e.numeros)}</div>
-    <div class="mini"><h4>Tem dúvida?</h4><p>Fale comigo pelo WhatsApp ou pelos canais do Linktree sobre esta edição.</p><a href="#fale-conosco">Fale conosco →</a></div>
+    <div class="mini"><h4>Tem dúvida?</h4><p>Fale comigo pelo WhatsApp sobre esta edição ou conheça os serviços do escritório.</p><a href="#fale-conosco">Fale conosco →</a></div>
     <div class="mini canal-mini"><h4>Avise-me</h4><p>Receba as próximas edições no celular pelo canal do WhatsApp.</p><a href="${CANAL}" target="_blank" rel="noopener">Seguir o canal →</a></div>
     <div><h4>Outras edições</h4><div class="outras">${outras.map(o=>`<a href="#${o.id}">${o.titulo}</a>`).join('')}</div></div>
   </aside>
