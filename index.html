@@ -47,7 +47,8 @@ strong{color:var(--brand);font-weight:700}
 .marca img{width:100%;height:auto}
 .marca .claro{display:var(--logo-claro)} .marca .escuro{display:var(--logo-escuro)}
 .topo nav{display:flex;gap:20px;align-items:center}
-.topo nav a{text-decoration:none;font-size:15px;letter-spacing:.04em;color:var(--muted)}
+.topo nav a{text-decoration:none;font-size:15px;letter-spacing:.04em;color:var(--muted);white-space:nowrap}
+@media (max-width:420px){.topo nav{gap:12px!important}.topo nav a{font-size:14px;letter-spacing:.02em}.topo nav .fale{padding:6px 10px}}
 .topo nav a[aria-current="page"]{color:var(--brand);font-weight:700}
 .topo nav .fale{color:var(--brand);border:1px solid var(--brand);padding:6px 14px;border-radius:4px}
 .topo nav .fale:hover{border-color:var(--accent)}
@@ -226,7 +227,7 @@ td.cod{font-family:var(--texto);font-weight:700;font-size:18px;color:var(--brand
     <nav aria-label="Principal">
       <a href="#inicio" data-nav="inicio">Edições</a>
       <a href="#fale-conosco">Fale conosco</a>
-      <a href="#conheca" data-nav="conheca" class="fale">Conheça</a>
+      <a href="#conheca" data-nav="conheca" class="fale">Conheça o escritório</a>
     </nav>
   </div>
 </header>
@@ -565,7 +566,7 @@ function rota(){
   const chave=e?e.id:(pag||'inicio');
   if(chave!==atual){
     app.innerHTML=e?materia(e):pag?conheca():inicio();
-    document.title=e?`${e.titulo} · Informativo Diário`:pag?'Conheça · Flavia Santos Contadora':'Informativo Diário';
+    document.title=e?`${e.titulo} · Informativo Diário`:pag?'Conheça o escritório · Flavia Santos Contadora':'Informativo Diário';
     window.scrollTo(0,0);atual=chave;
   }
   document.querySelectorAll('[data-nav]').forEach(a=>a.removeAttribute('aria-current'));
